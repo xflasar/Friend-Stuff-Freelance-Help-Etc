@@ -1,0 +1,28 @@
+def my_max(numbers):
+    # Zjistí nejvyšší číslo v seznamu
+    max_number = float('-inf')
+    for number in numbers:
+        if number > max_number:
+            max_number = number
+    return max_number
+
+def my_sum(numbers):
+    # Spočítá součet všech čísel v seznamu
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+def my_in(numbers, value):
+    # Zjistí, zda se hodnota vyskytuje v seznamu
+    for number in numbers:
+        if number == value:
+            return True
+    return False
+
+# Příklad použití
+my_list = [1, 5, 2, 8, 3, 7]
+print("Součet:", my_sum(my_list))
+print("Nejvyšší číslo:", my_max(my_list))
+print("Obsahuje 3:", my_in(my_list, 3))
+print("Obsahuje 6:", my_in(my_list, 6))

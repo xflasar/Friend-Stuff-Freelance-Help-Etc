@@ -1,0 +1,11 @@
+def double_characters(input_string):
+    # Vytvoříme nový řetězec s každým písmenem zdvojeným
+    result_string = ''.join(char * 2 for char in input_string)
+    return result_string
+
+# Příklad použití
+original_string = "abcd"
+result = double_characters(original_string)
+
+print("Původní řetězec:", original_string)
+print("Řetězec po zdvojení:", result)

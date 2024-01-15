@@ -1,10 +1,8 @@
 import re
 
 def is_number(string: str) -> bool:
-    # Regular expression pattern for matching numbers
     pattern = re.compile(r'^[+-]?(\d+(\.\d*)?|\.\d+)$')
 
-    # Check if the entire string matches the pattern
     return bool(pattern.fullmatch(string))
 
 # Get user input

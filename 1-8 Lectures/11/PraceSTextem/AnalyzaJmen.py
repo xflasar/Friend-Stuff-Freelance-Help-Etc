@@ -6,13 +6,10 @@ def most_common_names(filename: str, count: int) -> None:
         reader = csv.reader(file)
         names = [row[0] for row in reader]
 
-    # Count occurrences of each name
     name_counts = Counter(names)
 
-    # Get the most common names
     most_common = name_counts.most_common(count)
 
-    # Print the most common names
     print(f"{count} most common names:")
     for name, occurrences in most_common:
         print(f"{name}: {occurrences} occurrences")

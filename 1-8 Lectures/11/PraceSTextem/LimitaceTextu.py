@@ -17,7 +17,7 @@ def text_imitation(filename: str, length: int) -> None:
             next_words = get_next_word(words, current_word)
             
             if not next_words:
-                break  # Break if there are no more words following the current word
+                break
             current_word = random.choice(next_words)
 
 # Test the function

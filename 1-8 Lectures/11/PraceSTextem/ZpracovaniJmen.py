@@ -5,7 +5,6 @@ def process_names(input_filename: str, output_filename: str) -> None:
 
     names.sort()
 
-    # Write processed and sorted names to the output file
     with open(output_filename, 'w', encoding='utf-8') as output_file:
         for name in names:
             output_file.write(name + '\n')

@@ -1,10 +1,10 @@
-def chessboard(n):
+def chessboard(n, m):
     for i in range(n):
-        for j in range(n):
+        for j in range(m):
             if (i+j)%2 == 0:
                 print(" # ", end="")
             else:
-                print(" * ", end="")
+                print(" . ", end="")
         print()
 
-chessboard(2)
+chessboard(8,5)
